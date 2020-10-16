@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeopleAlert</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+<body>
+   <header class="cover">
+      <div class="header-text">
+         <h1>We count people</h1>
+      </div>
+  </header>
+   <nav class="nav">
+      <a href="" class="logo">PeopleAlert</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+         <li><a href="#home">Home</a></li>
+         <li><a href="#about">Who am I?</a></li>
+         <li><a href="#features">Features</a></li>
+         <li><a href="#more">More</a></li>
+      </ul>
+   </nav>
+   <div class="container" style="height: 100vh;">
+      <div id="svg-model">
+      </div>
+      <p>We count people
+
+         We count on people...</p>
+   </div>    
+</body>
+</html>
+<style>
+    svg {
+      height: 215px;
+      width: 100%;
+    }
+</style>
+<script>
+
+// get html file with svg included in...
+function getSvg() {
+   console.log('getting svg...');
+   return fetch('../components/people-alert.html')
+      .then(data => data.text())
+      .then(html => document.getElementById('svg-model').innerHTML = html
+   );
+}
+
+async function main() {
+   await getSvg();
+   console.log('DOM ready!');
+   // path951-4-0
+
+   //increase button
+   document.getElementById("g159").onclick = function(){
+      document.getElementById("rect1858").style.fill = 'red';
+      document.getElementById("g159").style.display = 'none';
+      setTimeout(() => { document.getElementById("g159").style.display = 'block'; }, 500);
+   }
+   document.getElementsByClassName("test").onclick = function(){
+      document.getElementById("rect1858").style.fill = 'red';
+      document.getElementById("g159").style.display = 'none';
+      setTimeout(() => { document.getElementById("g159").style.display = 'block'; }, 500);
+   }
+   
+   //decrease button
+   
+}
+main();
+
+</script>
