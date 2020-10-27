@@ -4,18 +4,125 @@
     background: rgb(0, 0, 0);
     height: 100vh;
     width: 100%;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    justify-content: center;
-}
-
-.header-text {
-    display: table-cell;
-    vertical-align: middle;
-    color: #FFF;
     text-align: center;
-    font-size: 20px;
-    font-weight: normal;
-    color: white;
 }
 
+.header-title {
+    margin-top: 10vh;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* font-size: 20px; */
+    font-size:5vmin;
+    color: white;  
+}
+
+.header-text { 
+    margin-top: 10vh; 
+    /* font-size: 20px; */
+    font-size:4vmin;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;   
+}
+
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+  
+#counter {
+  animation: counter 5s infinite alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 40px system-ui;
+  padding: 2rem;
+  color: white;
+}
+#counter::after {
+  content: counter(num);
+}
+  
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 100;
+  }
+}
+
+.fade-in {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.draw-line {
+    height:0px;
+    width:1px;
+    position: absolute; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    border-bottom:1px solid white;
+
+    -webkit-animation: increase 3s;
+    -moz-animation:    increase 3s; 
+    -o-animation:      increase 3s; 
+    animation:         increase 3s; 
+    animation-fill-mode: forwards;
+}
+  
+  @keyframes increase {
+      100% {
+          width: 300px;
+      }
+  }
+  .arrow {
+      animation: slide1 1s ease-in;
+      color: white;
+      font-size:140px;
+  }
+
+  @keyframes slide1 {
+      0%,
+      100% {
+        transform: translate(0, 0);
+      }
+    
+      50% {
+        transform: translate(0, 250px);
+      }
+    }

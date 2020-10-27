@@ -1,0 +1,27 @@
+#peoplealert {
+   width: 300px;
+   position: relative;
+   margin: auto;
+}
+
+#digit-display {
+   position: absolute;
+   font-size: 30;
+   color: red;
+   top: 121px;
+   left: 80px;
+   letter-spacing: 4px;
+}
+#people-button {
+   display: none;
+}
+
+.group-buttons {
+   text-align: center;
+}
+
+#tutorial-text {
+   text-align: center;
+   font-size: 18px;
+   line-height: 1.94;
+}

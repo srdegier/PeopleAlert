@@ -1,0 +1,64 @@
+.fa-check {
+    font-size: 100px;
+    padding: 16px;
+}
+
+.fa-shield {
+    font-size: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.fa-users {
+    font-size: 67px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+}
+
+.content-points {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 250px;
+}
+
+.card {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background: #F1F1F2;
+    display: flex;
+  }
+  
+  .card-img {
+    /* border: 1px solid green; */
+  }
+  
+  .card-img img {
+    display: block;
+    height: 130px;
+    width: auto;
+  }
+  
+  .card-body {
+    padding: 10px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid blue; */
+  }
+/* 
+  .head-product img {
+    display: block;
+    height: 36vh;
+    margin: 0 auto;
+  } */
+
+
+  .head-product img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+  }

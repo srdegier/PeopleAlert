@@ -2,34 +2,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PeopleAlert</title>
+    <title>PeopleCounter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/peoplecounter-about.css">
+    <link rel="stylesheet" href="../css/tutorial-modal.css">
+    <link rel="stylesheet" href="../css/peoplecounter.css">
+    <link rel="stylesheet" href="../css/timeline.css">
+    
 </head>
 <body>
-   <header class="cover">
-      <div class="header-text">
-         <h1>We count people</h1>
+   <header id="home" class="cover">
+      <div class="header-title fade-in">
+         <h1>PeopleCounter</h1>
+      </div>
+      <div id="head-step1" class="header-text fade-in">
+         <h1 class="glow">We count people</h1>
+         <div class="draw-line"></div>
+         <div id="counter"></div>
+      </div>
+      <div id="head-step2" class="header-text fade-in hidden">
+         <h1 class="glow">We count <span class="red">ON</span> people</h1>
+         <div class="draw-line"></div>
+      </div>
+      <div id='head-arrow' class="arrow hidden">
+         <i class="fa fa-angle-down" aria-hidden="true"></i>
       </div>
   </header>
-   <nav class="nav">
-      <a href="" class="logo">PeopleAlert</a>
+   <nav id="nav" class="nav">
+      <a href="" class="logo">PeopleCounter</a>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
          <li><a href="#home">Home</a></li>
          <li><a href="#about">Who am I?</a></li>
+         <li><a href="#product">PeopleCounter</a></li>
          <li><a href="#features">Features</a></li>
-         <li><a href="#more">More</a></li>
       </ul>
    </nav>
    <div class="container" style="height: 100vh;">
-      <div id="svg-model">
-      </div>
-      <p>We count people
+      <!-- <div id="svg-model">
+      </div> -->
+      <section id="about" class="content">
+         <div class="content-head">
+            <img src="../images/stefan.jpeg" alt="stefan">
+            <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+         </div>
+         <div class="content-title padding-content">
+            <h1>Wie is Stefan de Gier?</h1>
+            <hr>
+         </div>
+         <div class="content-text padding-content">
+            <p>
+               Hoi!
+            </p>
+            <p>
+               Mijn naam is Stefan de Gier en ben 21 jaar. Mijn passie is om dingen te ontwikkelen doormiddel van technologie.
+            </p>
+            <b>Evaring</b>
+            <p>
+               In mijn loopbaan heb ik al aardig wat ervaring betreft software development. Na dat ik de MBO4 studie Applicatie- en media ontwikkelaar heb gedaan. Heb ik ook 3 jaar werkervaring bij 3 verschillende Software bedrijven.
+            </p>
+         </div>
+         <div class="avtl">
+            <div class="ewrap">
+              <div class="event">
+                <strong class="title">Notive</strong>
+                <p class="text underline">
+                  Software Developer
+                </p>
+                <p class="text">
+                  Fulltime
+                </p>
+                <p class="text">
+                  feb. 2020 – sep. 2020 . 8 maanden
+                </p>
+                <p class="text">
+                  Zwijndrecht
+                </p>
+              </div>
+            </div>
+            <div class="ewrap right">
+              <div class="event">
+                <strong class="title">Notive</strong>
+                <p class="text underline">
+                  Programmeur
+                </p>
+                <p class="text">
+                  Stage
+                </p>
+                <p class="text">
+                  sep. 2019 – jan. 2020 . 5 maanden
+                </p>
+                <p class="text">
+                  Zwijndrecht
+                </p>
+              </div>
+            </div>
+            <div class="ewrap">
+               <div class="event">
+                 <strong class="title">SBA (Sander Brouwer Automatisering)</strong>
+                 <p class="text underline">
+                     Programmeur
+                 </p>
+                 <p class="text">
+                     Stage
+                 </p>
+                 <p class="text">
+                  feb. 2019 – jun. 2019 . 5 maanden
+                 </p>
+                 <p class="text">
+                  Hendrik-Ido-Ambacht
+                 </p>
+               </div>
+             </div>
+             <div class="ewrap right">
+               <div class="event">
+                 <strong class="title">SBA (Sander Brouwer Automatisering)</strong>
+                 <p class="text underline">
+                     Programmeur
+                 </p>
+                 <p class="text">
+                     Parttime
+                 </p>
+                 <p class="text">
+                     apr. 2018 – feb. 2019 . 11 maanden
+                 </p>
+                 <p class="text">
+                     Hendrik-Ido-Ambacht
+                 </p>
+               </div>
+             </div>
+             <div class="ewrap">
+               <div class="event">
+                 <strong class="title">FuTec Systems B.V.</strong>
+                 <p class="text underline">
+                     Programmeur
+                 </p>
+                 <p class="text">
+                     Stage
+                 </p>
+                 <p class="text">
+                  aug. 2017 – feb. 2018 . 7 maanden
+                 </p>
+                 <p class="text">
+                  Barendrecht
+                 </p>
+               </div>
+             </div>
+          </div>
+          <div id="notive" class="padding-content">
+             <h1>
+                Projecten
+             </h1>
+             <p>
+                Bij <span class="underline">Notive</span> heb ik aan 2 leuke projecten gewerkt genaamd:
+             </p>
+             <b>
+               <a href="https://www.clandebanlieue.com/">Clandebanlieue</a>
+               <br>
+               <a href="https://www.tailie.nl/consumer">Tailie</a>
+             </b>
+          </div>
+          <img id="notive-img" src="../images/notive-og.PNG" alt="notive">
+      </section>
+      <section id="product" class="content">
 
-         We count on people...</p>
+         <div class="content-title padding-content">
+            <h1>PeopleCounter</h1>
+            <hr>
+         </div>
+         <div class="head-product padding-content">
+            <!-- <img src="../images/people-counter.jpeg" alt="people-counter"> -->
+            <img src="../images/peoplecounter.gif" alt="peoplecounter">
+            <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+         </div>
+         <div class="padding-content">
+            <div class="card">
+               <div class="card-img">
+                  <i class="fa fa-shield" aria-hidden="true"></i>
+               </div>
+               <div class="card-body">
+                 <h4 class="card-title">Controle hebben</h4>
+                 <p class="card-text">Heb de controle of er iemand naar binnen mag of niet doormiddel van een alarm systeem!</p>
+               </div>
+             </div>
+             <div class="card">
+               <div class="card-img">
+                 <i class="fa fa-users" aria-hidden="true"></i>
+               </div>
+               <div class="card-body">
+                 <h4 class="card-title">Hoeveel mensen</h4>
+                 <p class="card-text">Weet op een oogopslag te zien hoeveel mensen er momenteel in de winkel zijn doormiddel van een scherm!</p>
+               </div>
+             </div>
+             <div class="card">
+               <div class="card-img">
+                 <i class="fa fa-check" aria-hidden="true"></i>
+               </div>
+               <div class="card-body">
+                 <h4 class="card-title">Zeker zijn</h4>
+                 <p class="card-text">Wees zeker dat je de minimum mensen in je ruimte heb.</p>
+               </div>
+             </div>
+         </div>
+         <div class="content-title padding-content">
+            <h1>Stel je gangpad in</h1>
+            <hr>
+         </div>
+         <div class="head-product padding-content">
+            <!-- <img src="../images/people-counter.jpeg" alt="people-counter"> -->
+            <img src="../images/workings.png" alt="peoplecounter">
+            <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+         </div>
+      </section>
+      <section id="features" class="content padding-content">
+         <div class="content-head">
+            <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+         </div>
+         <div class="content-title">
+            <h1>Features</h1>
+            <hr>
+         </div>
+         <!-- Trigger/Open The Modal -->
+         <button id="startTut">Start Tutorial</button>
+         <!-- The Modal -->
+         <div id="tutModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+               <span class="close">&times;</span>
+               <div id="peoplecounter-tutorial">
+               </div>
+            </div>
+         </div>
+         <!-- Trigger/Open The Modal -->
+         <button id="startFeat">Show Features</button>
+         <!-- The Modal -->
+         <div id="featModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+               <span class="close 2">&times;</span>
+               <iframe class="ytplayer" type="text/html" width="640" height="360"
+               src="https://www.youtube.com/embed/M20CAI_95F8"
+               frameborder="0">
+               </iframe>
+
+               <iframe class="ytplayer" type="text/html" width="640" height="360"
+               src="https://www.youtube.com/embed/-IvKqImR1TY"
+               frameborder="0">
+               </iframe>
+
+               <iframe class="ytplayer" type="text/html" width="640" height="360"
+               src="https://www.youtube.com/embed/GOJDMVTNtvI"
+               frameborder="0">
+               </iframe>
+
+               <iframe class="ytplayer" type="text/html" width="640" height="360"
+               src="https://www.youtube.com/embed/uf72omulIVY"
+               frameborder="0">
+               </iframe>
+            </div>
+         </div>
+         <div class="content-text">
+         </div>
+      </section>
    </div>    
 </body>
 </html>
@@ -38,36 +277,45 @@
       height: 215px;
       width: 100%;
     }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+   }
 </style>
+<script src="../js/header.js"></script>
+<script src="../js/tutorial-modal.js"></script>
 <script>
-
+   
 // get html file with svg included in...
-function getSvg() {
+function loadComponent() {
    console.log('getting svg...');
    return fetch('../components/people-alert.html')
       .then(data => data.text())
-      .then(html => document.getElementById('svg-model').innerHTML = html
+      .then(html => document.getElementById('peoplecounter-tutorial').innerHTML = html
    );
 }
 
 async function main() {
-   await getSvg();
+   await loadComponent();
+   const script = document.createElement('script')
+   script.src = '../js/peopleAlert.js'
+   document.head.append(script)
    console.log('DOM ready!');
-   // path951-4-0
 
-   //increase button
-   document.getElementById("g159").onclick = function(){
-      document.getElementById("rect1858").style.fill = 'red';
-      document.getElementById("g159").style.display = 'none';
-      setTimeout(() => { document.getElementById("g159").style.display = 'block'; }, 500);
+
+   window.onscroll = function() {myFunction()};
+
+   var navbar = document.getElementById("nav");
+   var sticky = navbar.offsetTop;
+
+   function myFunction() {
+      if (window.pageYOffset >= sticky) {
+         navbar.classList.add("sticky")
+      } else {
+         navbar.classList.remove("sticky");
+      }
    }
-   document.getElementsByClassName("test").onclick = function(){
-      document.getElementById("rect1858").style.fill = 'red';
-      document.getElementById("g159").style.display = 'none';
-      setTimeout(() => { document.getElementById("g159").style.display = 'block'; }, 500);
-   }
-   
-   //decrease button
    
 }
 main();

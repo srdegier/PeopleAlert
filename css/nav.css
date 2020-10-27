@@ -12,7 +12,7 @@ a {
     height: 60px;
     position: sticky;
     top: 1px;
-    /* z-index: 3; */
+    z-index: 3;
   }
   
   .nav ul {
@@ -116,6 +116,8 @@ a {
   .nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
+
+  nav:active ul {display: block;}
   
   /* 48em = 768px */
   

@@ -1,0 +1,124 @@
+/* [CONTAINER] */
+/* More accurate sizing */
+.avtl, div.ewrap, div.event {
+    box-sizing: border-box;
+  }
+  .avtl {
+    position: relative;
+    /* Width restriction if you want */
+    width: 100%;
+    margin: 0 auto;
+    /* margin-top: 60px; */
+  }
+  
+  /* This will draw the vertical line */
+  .avtl::before {
+    content: '';
+    width: 5px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+  }
+  
+  /* [EVENT WRAPPER] */
+  div.ewrap {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    left: 0; /* default to left */
+  }
+  div.right {
+    left: 50%;
+  }
+  
+  /* [EVENT ITSELF] */
+  div.event {
+    padding: 20px 30px;
+    background-color: #f4f4f4;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* [THE DATE & TEST] */
+  strong.title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+  }
+  .event p.text {
+    margin: 4px;
+  }
+  
+  /* [ADD SPEECH BUBBLE TRIANGLE] */
+  div.ewrap::before {
+    content: '';
+    border: 10px solid transparent;
+    border-left-color: #f4f4f4;
+    border-right: 0;
+    position: absolute;
+    right: 30px;
+    top: 20%;
+  }
+  div.ewrap.right::before {
+    content: '';
+    border: 10px solid transparent;
+    border-right-color: #f4f4f4;
+    border-left: 0;
+    position: absolute;
+    right: auto;
+    left: 30px;
+    top: 20%;
+  }
+  
+  /* [ADD CIRCLE ON VERTICAL LINE] */
+  div.ewrap::after {
+    content: '';
+    background: #fff;
+    border: 4px solid black;
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    position: absolute;
+    top: 20%;
+    right: -14px;
+  }
+  div.ewrap.right::after {
+    content: '';
+    background: #fff;
+    border: 4px solid black;
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    position: absolute;
+    top: 20%;
+    right: auto;
+    left: -10px;
+  }
+
+  .event img {
+    height: 80px;
+    left: 75%;
+    top: 25%;
+    position: absolute;
+  }
+
+@media (max-width:767px)  {
+
+    .ewrap {
+        padding: 10px 15px!important;
+    } 
+    .avtl::before {
+        top: 10px;
+        bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    div.ewrap {width: 100%;}
+    div.right {left: 0%;}
+    div.ewrap::before {display: none;}
+    div.ewrap::after {display: none;}
+    }
