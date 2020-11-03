@@ -1,11 +1,11 @@
-var allowed = 5;
-var peopleInside = 0
-var iniated = true;
-var text = {
+let allowed = 5;
+let peopleInside = 0
+let iniated = true;
+let text = {
    'step1'  : '<p>Druk op de knoppen aan de zijkant van het apparaat om de toegestaane hoeveelheid omhoog te doen of omlaag.</p>',
    'step2'  : '<p>Druk op de + of - om de aantal mensen te verhogen of verlagen in een ruimte</p><p>Wanneer de waarde van mensen die binnen zijn en de toegestaande gelijk staan wordt de alarm rood</p><p>Wanneer de waarde van de mensen die binnen zijn hoger is dan de toegestaande. Gaat het alarm knipperen</p>',
 };
-var currentStep = 1;
+let currentStep = 1;
 
 // basic off
 

@@ -1,11 +1,11 @@
 // Get the modal
-var modal = document.getElementById("tutModal");
+let modal = document.getElementById("tutModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("startTut");
+let btn = document.getElementById("startTut");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
@@ -24,13 +24,13 @@ window.onclick = function(event) {
   }
 }
 
-var modal2 = document.getElementById("featModal");
+let modal2 = document.getElementById("featModal");
 
 // Get the button that opens the modal
-var btn2 = document.getElementById("startFeat");
+let btn2 = document.getElementById("startFeat");
 
 // Get the <span> element that closes the modal
-var span2 = document.getElementsByClassName("close 2")[0];
+let span2 = document.getElementsByClassName("close 2")[0];
 
 // When the user clicks the button, open the modal 
 btn2.onclick = function() {

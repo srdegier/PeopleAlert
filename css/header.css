@@ -1,5 +1,4 @@
 
-/* background: url("../images/people-counter.jpeg") no-repeat center center; */
 .cover {
     background: rgb(0, 0, 0);
     height: 100vh;
@@ -17,14 +16,12 @@
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
-    /* font-size: 20px; */
     font-size:5vmin;
     color: white;  
 }
 
 .header-text { 
     margin-top: 10vh; 
-    /* font-size: 20px; */
     font-size:4vmin;
     color: white;
     padding-left: 10px;
@@ -40,6 +37,10 @@
   
 #counter {
   animation: counter 5s infinite alternate ease-in-out;
+  -webkit-animation: counter 5s infinite alternate ease-in-out;
+  -moz-animation: counter 5s infinite alternate ease-in-out;
+  -o-animation: counter 5s infinite alternate ease-in-out;
+  -ms-animation: counter 5s infinite alternate ease-in-out;
   counter-reset: num var(--num);
   font: 800 40px system-ui;
   padding: 2rem;
@@ -125,4 +126,4 @@
       50% {
         transform: translate(0, 250px);
       }
-    }
+  }

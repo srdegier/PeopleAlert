@@ -3,10 +3,14 @@ body {
     padding:0;
     font-family: Helvetica, sans-serif;
     background-color: #f4f4f4;
-    /* overflow: hidden; */
     scroll-behavior: smooth; 
-    height: auto;
-}   
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 .container {
     margin-top: 50px;
@@ -27,10 +31,7 @@ body {
 .content {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
     background-color: #fff;
-    /* padding: 30px 30px 72px; */
     margin-bottom: 50px;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -38,12 +39,8 @@ body {
 }
 
 .padding-content {
-    /* padding-left: 205px;
-    padding-right: 205px; */
     padding-left: 20%;
     padding-right: 20%;
-    /* padding-top: 40px; */
-    /* padding-bottom: 40px; */
 }
 
 .content-text {
