@@ -1,14 +1,10 @@
-/* [CONTAINER] */
-/* More accurate sizing */
 .avtl, div.ewrap, div.event {
     box-sizing: border-box;
   }
   .avtl {
     position: relative;
-    /* Width restriction if you want */
     width: 100%;
     margin: 0 auto;
-    /* margin-top: 60px; */
   }
   
   /* This will draw the vertical line */
@@ -22,7 +18,6 @@
     left: 50%;
   }
   
-  /* [EVENT WRAPPER] */
   div.ewrap {
     padding: 10px 40px;
     position: relative;
@@ -33,7 +28,6 @@
     left: 50%;
   }
   
-  /* [EVENT ITSELF] */
   div.event {
     padding: 20px 30px;
     background-color: #f4f4f4;
@@ -41,7 +35,6 @@
     border-radius: 6px;
   }
   
-  /* [THE DATE & TEST] */
   strong.title {
     font-size: 1.1em;
     font-weight: bold;
@@ -51,7 +44,6 @@
     margin: 4px;
   }
   
-  /* [ADD SPEECH BUBBLE TRIANGLE] */
   div.ewrap::before {
     content: '';
     border: 10px solid transparent;
@@ -72,7 +64,6 @@
     top: 20%;
   }
   
-  /* [ADD CIRCLE ON VERTICAL LINE] */
   div.ewrap::after {
     content: '';
     background: #fff;
@@ -114,7 +105,6 @@
         bottom: 10px;
     }
 }
-
 
 @media screen and (max-width: 600px) {
     div.ewrap {width: 100%;}

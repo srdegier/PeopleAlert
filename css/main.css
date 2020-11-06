@@ -46,8 +46,6 @@ body {
 .content-text {
     font-size: 18px;
     line-height: 1.94;
-    /* padding: 120px;
-    padding-top: 0px; */
 }
 
 .content-head {
@@ -58,11 +56,6 @@ body {
     height: 150px;
 }
 
-.content-title {
-    /* padding: 120px;
-    padding-bottom: 0px;
-    padding-top: 0px; */
-}
 .underline {
     font-weight: bold;
     text-decoration: underline;
@@ -94,8 +87,6 @@ button:hover {
     .padding-content {
         padding-left: 30px;
         padding-right: 30px;
-        /* padding-top: 40px; */
-        /* padding-bottom: 40px; */
     }
 }
 

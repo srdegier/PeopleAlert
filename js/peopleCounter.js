@@ -3,7 +3,7 @@ let peopleInside = 0
 let iniated = true;
 let text = {
    'step1'  : '<p>Druk op de knoppen aan de zijkant van het apparaat om de toegestaane hoeveelheid omhoog te doen of omlaag.</p>',
-   'step2'  : '<p>Druk op de + of - om de aantal mensen te verhogen of verlagen in een ruimte</p><p>Wanneer de waarde van mensen die binnen zijn en de toegestaande gelijk staan wordt de alarm rood</p><p>Wanneer de waarde van de mensen die binnen zijn hoger is dan de toegestaande. Gaat het alarm knipperen</p>',
+   'step2'  : 'Druk op de + of - om de aantal mensen te verhogen of verlagen in een ruimte</p><p>Wanneer de waarde van mensen die binnen zijn en de toegestaande gelijk staan wordt de alarm rood</p><p>Wanneer de waarde van de mensen die binnen zijn hoger is dan de toegestaande. Gaat het alarm knipperen</p>',
 };
 let currentStep = 1;
 
@@ -71,8 +71,6 @@ function decreaseInside() {
 
 // next step
 function nextStep() {
-   console.log('ailmao');
-   console.log(currentStep);
    currentStep++;
    goToStep();
    if (currentStep >= 1 && currentStep != 2) {
@@ -92,32 +90,20 @@ function previousStep() {
 // tutorial
 
 function goToStep() {
-   console.log(currentStep);
-   document.getElementById("tutorial-text").innerHTML = `<p>${text['step'+currentStep]}</p>`;
+   document.getElementById("tutorial-text").innerHTML = `${text['step'+currentStep]}`;
    switch(currentStep) {
       case 1:
-        console.log('1');
         document.getElementById("previous-step").style.display = 'none';
         document.getElementById("people-button").style.display = 'none';
         document.getElementById("next-step").style.display = 'inline';
         break;
       case 2:
-         console.log('2');
          document.getElementById("previous-step").style.display = 'inline';
          document.getElementById("next-step").style.display = 'none';
          document.getElementById("people-button").style.display = 'block';
         break;
       default:
-        // code block
     }
 }
 
 goToStep();
-
- 
-// Call function using Window object
-// var assignedFunction = 'step'+currentStep;
-// // find object
-// fn = window[assignedFunction];
-// // is object a function?
-// if (typeof fn === "function") fn();

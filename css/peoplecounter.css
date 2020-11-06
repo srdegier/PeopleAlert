@@ -1,9 +1,9 @@
-#peoplealert {
+#peoplecounter {
    width: 300px;
    position: relative;
    margin: auto;
 }
-/* uitleggen */
+
 #digit-display {
    position: absolute;
    font-size: 30;
